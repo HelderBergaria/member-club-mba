@@ -1,0 +1,39 @@
+.text-main-pink {
+    color: var(--main---pink);
+}
+
+.text-main-green {
+    color: var(--main---green);
+}
+
+.text-base-white {
+    color: var(--base---white);
+}
+
+.text-base-gray-100 {
+    color: var(--base---gray-100);
+}
+
+.text-base-gray-200 {
+    color: var(--base---gray-200);
+}
+
+.text-base-gray-300 {
+    color: var(--base---gray-300);
+}
+
+.text-base-gray-400 {
+    color: var(--base---gray-400);
+}
+
+.text-base-gray-500 {
+    color: var(--base---gray-500);
+}
+
+.text-base-gray-600 {
+    color: var(--base---gray-600);
+}
+
+.text-base-gray-700 {
+    color: var(--base---gray-700);
+}

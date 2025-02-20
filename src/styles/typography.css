@@ -1,0 +1,33 @@
+.title-md {
+    font: var(--title-md);
+}
+
+.title-sm {
+    font: var(--title-sm);
+}
+
+.subtitle-md {
+    font: var(--subtitle-md);
+    text-transform: uppercase;
+}
+
+.subtitle-sm {
+    font: var(--subtitle-sm);
+    text-transform: uppercase;
+}
+
+.text-md {
+    font: var(--text-md);
+}
+
+.text-sm {
+    font: var(--text-sm);
+}
+
+.text-xs {
+    font: var(--text-xs);
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}

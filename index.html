@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Club</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./src/assets/Logo.png" />
+        </header>
+        <form class="form">
+            <input 
+                class="input" 
+                placeholder="ID do cartão" 
+                type="text" 
+                id="id-cartao" 
+                name="id" 
+                required="required"
+            />
+            <button type="submit">
+                <img 
+                    src="./src/assets/Enter.svg" 
+                    alt="Ícone que indica tecla 'enter'"
+                />
+            </button>
+        </form>
+        <div class="grid gap-1">
+            <div class="card profile flex items-center gap-1">
+                <div class="image">
+                    <img src="https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133352156-stock-illustration-default-placeholder-profile-icon.jpg" alt="Imagem de Perfil">
+                </div>
+                <div class="flex flex-column">
+                    <h2 class="title-sm text-base-gray-600">Usuário</h2>
+                    <p class="text-xs text-base-gray-500"></p>
+                </div>
+            </div>
+            <div class="card history">
+                <header class="flex items-center space-between">
+                    <h3 class="subtitle-sm text-base-gray-500">Histórico</h3>
+                    <span class="text-xs text-base-gray-500">0 cortes</span>
+                </header>
+                <ul class="flex flex-column gap-0.75">
+                </ul>
+            </div>
+            <div class="card fidelity flex flex-column gap-2">
+                <div class="flex items-start space-between">
+                    <div class="flex flex-column gap-0.5">
+                        <h3 class="subtitle-sm text-base-gray-500">Cartão fidelidade</h3>
+                        <p class="text-sm text-base-gray-500">Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+                    </div>
+                    <h4 class="tag">ID</h4>
+                </div>
+                <div class="flex flex-wrap gap-1">
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                    </div>
+                    <div class="gray-box">
+                        <img src="./src/assets/GrayGift.svg" alt="Ícone de presente cinza, parecendo desabilitado" />
+                    </div>
+                </div>
+            </div>
+            <div class="card milestone">
+                <div class="flex space-between gap-1">
+                    <aside class="flex flex-column flex-1 gap-0.75">
+                        <div class="flex gap-0.5 items-baseline">
+                            <h3 class="title-md text-base-gray-600">10</h3>
+                            <span class="text-md text-base-gray-500">cortes restantes</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="progress-text text-base-gray-500 text-xs text-nowrap">0 de 10</div>
+                        </div>
+                    </aside>
+                    <div class="image">
+                        <img 
+                            src="./src/assets/PinGift.png" 
+                            alt="Ícone de presente com sombra e colorido em rosa"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

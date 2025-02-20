@@ -1,0 +1,57 @@
+{
+  "clients": [
+    {
+      "id": "111-111-111-111",
+      "name": "Natália Miranda",
+      "clientSince": "18/09/2023",
+      "image": "https://xsgames.co/randomusers/assets/avatars/female/1.jpg",
+      "appointmentHistory": [
+        {"date": "29/04/2024", "time": "18:30"},
+        {"date": "16/03/2024", "time": "17:00"},
+        {"date": "01/02/2024", "time": "17:30"},
+        {"date": "03/01/2024", "time": "15:00"},
+        {"date": "28/11/2023", "time": "14:00"},
+        {"date": "23/10/2023", "time": "15:00"}
+      ],
+      "loyaltyCard": {
+        "totalCuts": 7,
+        "cutsNeeded": 10,
+        "cutsRemaining": 3
+      }
+    },
+    {
+      "id": "222-222-222-222",
+      "name": "Capitão Nascimento",
+      "clientSince": "12/04/2023",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/8.jpg",
+      "appointmentHistory": [
+        {"date": "01/05/2024", "time": "10:00"},
+        {"date": "12/02/2024", "time": "09:00"},
+        {"date": "30/12/2023", "time": "11:00"},
+        {"date": "05/11/2023", "time": "10:30"}
+      ],
+      "loyaltyCard": {
+        "totalCuts": 4,
+        "cutsNeeded": 10,
+        "cutsRemaining": 6
+      }
+    },
+    {
+      "id": "333-333-333-333",
+      "name": "Sansão",
+      "clientSince": "15/07/2023",
+      "image": "https://xsgames.co/randomusers/assets/avatars/male/2.jpg",
+      "appointmentHistory": [
+        {"date": "22/04/2024", "time": "16:00"},
+        {"date": "18/03/2024", "time": "16:30"},
+        {"date": "24/01/2024", "time": "17:45"},
+        {"date": "20/12/2023", "time": "15:15"}
+      ],
+      "loyaltyCard": {
+        "totalCuts": 5,
+        "cutsNeeded": 10,
+        "cutsRemaining": 5  
+      }
+    }
+  ]
+}

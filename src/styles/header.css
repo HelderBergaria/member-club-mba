@@ -1,0 +1,8 @@
+header {
+    & img {
+        display: block;
+        margin-inline: auto;
+        width: 116px;
+        margin-top: 4rem;
+    }
+}

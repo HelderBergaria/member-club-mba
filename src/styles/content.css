@@ -1,0 +1,206 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+        'profile fidelity'
+        'history fidelity'
+        'history milestone';
+    grid-template-columns: 320px 2fr;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-areas: 
+            'profile'
+            'fidelity'
+            'milestone'
+            'history';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: .5rem;
+    }
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.history {
+    grid-area: history;
+}
+
+.fidelity {
+    grid-area: fidelity;
+}
+
+.milestone {
+    grid-area: milestone;
+}
+
+.fidelity {
+    height: 100%;
+}
+
+/* Perfil */
+.profile .image {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        border-radius: 10px;
+        background: conic-gradient(
+            #D658B3 0%,
+            #AF74DE 13%, 
+            #6B84DE 25%, 
+            #5DCAB7 38%, 
+            #45B442 50%, 
+            #5EC6B9 62%,
+            #698DD9 73%,
+            #B173DC 87%,
+            #D658B3 100%
+        );
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    & img {
+        position: relative;
+        z-index: 2;
+        width: 52px;
+        height: 52px;
+        border-radius: var(--radius--sm);
+        border: 1.5px solid var(--base---gray-100);
+    }
+}
+
+/* Histórico */
+.history header {
+    padding-bottom: var(--spacing---md);
+    border-bottom: 1px solid var(--base---gray-200);
+    margin-bottom: var(--spacing---md);
+}
+
+.history {
+    height: 360px;
+    overflow: auto;
+
+    & .verified {
+        height: 32px;
+        width: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--main---green-0\.12-opacity);
+    }
+}
+
+/* Fidelidade */
+.fidelity {
+    padding: 2rem;
+
+    @media (max-width: 768px) {
+        padding: 1rem;
+    }
+
+    & .tag {
+        display: flex;
+        align-items: center;
+        background: var(--base---gray-300);
+        color: var(--base---gray-500);
+        border-radius: 100px;
+        padding-inline: 0.75rem;
+        padding-block: 0.375rem;
+    }
+
+    @media (max-width: 768px) {
+        & .tag {
+            font-size: var(--body---text--xs);
+            text-wrap: nowrap;
+            margin-left: 1rem;
+        }
+
+        & > div:last-child {
+            gap: .5rem;
+        }
+    }
+
+    & .gray-box {
+        display: grid;
+        place-items: center;
+        height: 87px;
+        width: 87px;
+        border-radius: 20px;
+        background: var(--base---gray-200);
+
+        img {
+            width: 64px;
+        }
+
+        &:last-child img:not(.achievement) {
+            width: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        & .gray-box {
+            height: 64px;
+            width: 64px;
+
+            img {
+                width: 46px;
+            }
+        }
+    }
+}
+
+/* Cortes Restantes */
+.milestone {
+    padding-inline: 2rem;
+
+    & .image {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--base---gray-200);
+        width: 72px;
+        height: 72px;
+        overflow: hidden;
+    }
+
+    & img {
+        width: 64px;
+    }
+
+    .progress-container {
+        --bar-height: 8px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        & .progress-bar {
+            position: relative;
+            height: var(--bar-height);
+            background: var(--base---gray-300);
+            border-radius: 100px;
+            width: 100%;
+            margin-right: 1rem;
+        }
+
+        & .progress {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            height: var(--bar-height);
+            background: var(--linear-gradient);
+            border-radius: 100px;
+        }
+    }
+}
